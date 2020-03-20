@@ -74,18 +74,19 @@
                         <outlet property="lowerButton" destination="AKO-qP-uD2" id="Yvp-f0-4Je"/>
                         <outlet property="passwordTextField" destination="mGo-Qf-z0j" id="xww-XR-5NS"/>
                         <outlet property="upperButton" destination="BSf-XP-twq" id="EN0-po-2fJ"/>
+                        <segue destination="Lsk-0R-wkh" kind="presentation" identifier="loginToGroups" id="Td2-VC-cGi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-861" y="114"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Groups-->
         <scene sceneID="CGL-Cf-k58">
             <objects>
                 <tableViewController id="3Hg-UF-fBQ" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NzU-2c-Nbf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -103,9 +104,29 @@
                             <outlet property="delegate" destination="3Hg-UF-fBQ" id="cu2-wd-aIN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="yYG-Kg-CiI"/>
+                    <toolbarItems>
+                        <barButtonItem title="Log Out" style="plain" id="WjX-PJ-TFA">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CVI-9f-KSa">
+                                <rect key="frame" x="20" y="12" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log Out"/>
+                            </button>
+                            <connections>
+                                <action selector="logoutButton:" destination="e27-FV-co7" id="NR0-9B-ASS"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Groups" id="yYG-Kg-CiI">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="X4I-jd-5qE">
+                            <connections>
+                                <action selector="addGroupButton:" destination="e27-FV-co7" id="LIu-H5-2FS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43L-Og-AdI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="e27-FV-co7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="861" y="114"/>
         </scene>
@@ -114,7 +135,7 @@
             <objects>
                 <navigationController id="Lsk-0R-wkh" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EBF-dI-tcJ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

@@ -8,6 +8,7 @@ target 'TestProject' do
   use_frameworks!
 
   # Pods for TestProject
+  pod 'Firebase/Analytics'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   

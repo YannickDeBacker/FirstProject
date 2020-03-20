@@ -16,6 +16,8 @@
 		7DD7BD752425133300F2DF01 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BD742425133300F2DF01 /* Ride.swift */; };
 		7DD7BD77242513D300F2DF01 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BD76242513D300F2DF01 /* Group.swift */; };
 		7DD7BD79242514B600F2DF01 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BD78242514B600F2DF01 /* User.swift */; };
+		7DD7BD7B24251DB400F2DF01 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DD7BD7A24251DB400F2DF01 /* GoogleService-Info.plist */; };
+		7DD7BD7D242526AC00F2DF01 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7BD7C242526AC00F2DF01 /* GroupsViewController.swift */; };
 		F71C900F5BC24AFD2FC785B7 /* Pods_TestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9125E730511F3EE4B6F22C /* Pods_TestProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		7DD7BD742425133300F2DF01 /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 		7DD7BD76242513D300F2DF01 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		7DD7BD78242514B600F2DF01 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7DD7BD7A24251DB400F2DF01 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7DD7BD7C242526AC00F2DF01 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		D9830B977E01877E27555E4E /* Pods-TestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +85,7 @@
 				7DD7BD5E24240D7500F2DF01 /* AppDelegate.swift */,
 				7DD7BD6024240D7500F2DF01 /* SceneDelegate.swift */,
 				7DD7BD6224240D7500F2DF01 /* LoginViewController.swift */,
+				7DD7BD7C242526AC00F2DF01 /* GroupsViewController.swift */,
 				7DD7BD6424240D7500F2DF01 /* Main.storyboard */,
 				7DD7BD742425133300F2DF01 /* Ride.swift */,
 				7DD7BD78242514B600F2DF01 /* User.swift */,
@@ -88,6 +93,7 @@
 				7DD7BD6724240D7700F2DF01 /* Assets.xcassets */,
 				7DD7BD6924240D7700F2DF01 /* LaunchScreen.storyboard */,
 				7DD7BD6C24240D7700F2DF01 /* Info.plist */,
+				7DD7BD7A24251DB400F2DF01 /* GoogleService-Info.plist */,
 			);
 			path = TestProject;
 			sourceTree = "<group>";
@@ -162,6 +168,7 @@
 			files = (
 				7DD7BD6B24240D7700F2DF01 /* LaunchScreen.storyboard in Resources */,
 				7DD7BD6824240D7700F2DF01 /* Assets.xcassets in Resources */,
+				7DD7BD7B24251DB400F2DF01 /* GoogleService-Info.plist in Resources */,
 				7DD7BD6624240D7500F2DF01 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD7BD7D242526AC00F2DF01 /* GroupsViewController.swift in Sources */,
 				7DD7BD6324240D7500F2DF01 /* LoginViewController.swift in Sources */,
 				7DD7BD752425133300F2DF01 /* Ride.swift in Sources */,
 				7DD7BD79242514B600F2DF01 /* User.swift in Sources */,
