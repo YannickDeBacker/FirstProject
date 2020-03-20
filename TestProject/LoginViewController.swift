@@ -39,7 +39,7 @@ class ViewController: UIViewController {
                         if let error = error {
                             print(error)
                         } else {
-                            print("succesfull sign-in of /() user")
+                            print("succesfull sign-in of \(user)")
                             // go to next screen
                             self.performSegue(withIdentifier: "loginToGroups", sender: nil)
                         }

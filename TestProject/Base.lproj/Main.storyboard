@@ -82,20 +82,85 @@
             <point key="canvasLocation" x="-861" y="114"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="azJ-9b-1pk">
+        <scene sceneID="6HQ-hH-8gu">
             <objects>
-                <viewController id="kcd-4H-U1V" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Bgv-b2-gvl">
+                <viewController id="MfB-GF-GO9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dzk-71-kUk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of new group" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="87C-kX-tYO">
+                                <rect key="frame" x="10" y="106" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsJ-nf-Ds1">
+                                <rect key="frame" x="10" y="681" width="394" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Create Group"/>
+                                <connections>
+                                    <action selector="createGroupTapped:" destination="Y5Q-ct-q6c" eventType="touchUpInside" id="eJz-aE-GRa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Current group members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdf-pL-9La">
+                                <rect key="frame" x="115" y="164" width="184" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FsJ-nf-Ds1" firstAttribute="leading" secondItem="gdn-No-EXE" secondAttribute="leading" constant="10" id="06N-T1-Qbs"/>
+                            <constraint firstItem="gdn-No-EXE" firstAttribute="bottom" secondItem="FsJ-nf-Ds1" secondAttribute="bottom" constant="30" id="2aQ-fC-5yx"/>
+                            <constraint firstItem="gdn-No-EXE" firstAttribute="trailing" secondItem="87C-kX-tYO" secondAttribute="trailing" constant="10" id="CRA-ZX-pdO"/>
+                            <constraint firstItem="gdn-No-EXE" firstAttribute="bottom" secondItem="FsJ-nf-Ds1" secondAttribute="bottom" constant="10" id="DCb-iu-x3C"/>
+                            <constraint firstItem="gdn-No-EXE" firstAttribute="bottom" secondItem="FsJ-nf-Ds1" secondAttribute="bottom" constant="30" id="PRQ-Bf-iAE"/>
+                            <constraint firstItem="87C-kX-tYO" firstAttribute="top" secondItem="gdn-No-EXE" secondAttribute="top" constant="50" id="Wh3-qX-5th"/>
+                            <constraint firstItem="87C-kX-tYO" firstAttribute="leading" secondItem="gdn-No-EXE" secondAttribute="leading" constant="10" id="k3s-nn-Igv"/>
+                            <constraint firstItem="gdn-No-EXE" firstAttribute="trailing" secondItem="FsJ-nf-Ds1" secondAttribute="trailing" constant="10" id="oPa-U4-cOK"/>
+                            <constraint firstItem="pdf-pL-9La" firstAttribute="top" secondItem="87C-kX-tYO" secondAttribute="bottom" constant="96" id="p3A-iR-dCh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gdn-No-EXE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eO1-Xd-MX6"/>
+                    <connections>
+                        <segue destination="V5J-6O-ghi" kind="show" identifier="addGroupToAddPlayers" id="cFd-JX-96Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xRG-Hz-ICY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Y5Q-ct-q6c" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1618.840579710145" y="-616.07142857142856"/>
+        </scene>
+        <!--Add group members-->
+        <scene sceneID="6L4-uH-yur">
+            <objects>
+                <tableViewController id="V5J-6O-ghi" customClass="AddGroupPlayersTableVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1oq-QR-9Dm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="2Q9-6C-8WP"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="7ll-w6-diy"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qiA-kh-lPb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Pm8-Mr-uZI">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pm8-Mr-uZI" id="dQp-Vu-aos">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="V5J-6O-ghi" id="Wvi-wJ-4uj"/>
+                            <outlet property="delegate" destination="V5J-6O-ghi" id="XE4-Ap-Ykd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add group members" id="Se9-dU-JVg"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tt3-iO-owZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1616" y="-613"/>
+            <point key="canvasLocation" x="2404" y="-616"/>
         </scene>
         <!--Groups-->
         <scene sceneID="CGL-Cf-k58">
@@ -106,7 +171,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rkT-jJ-836">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupID" id="rkT-jJ-836">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rkT-jJ-836" id="lJE-kf-N6w">
@@ -135,7 +200,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="kcd-4H-U1V" kind="show" identifier="groupsToAddGroup" id="lH1-vV-OBg"/>
+                        <segue destination="MfB-GF-GO9" kind="show" identifier="groupsToAddGroup" id="cOY-Wq-NJv"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43L-Og-AdI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

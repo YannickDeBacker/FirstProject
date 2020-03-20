@@ -10,6 +10,9 @@ import UIKit
 
 class AddGroupViewController: UIViewController {
 
+    var newGroup = Group()
+    var particpants : [User] = []
+    
     @IBOutlet weak var groupNameTF: UITextField!
     
     @IBOutlet weak var groupParticipants: UITableView!
@@ -22,8 +25,25 @@ class AddGroupViewController: UIViewController {
     
     @IBAction func addGroupPlayersTapped(_ sender: Any) {
         performSegue(withIdentifier: "addGroupToAddPlayers", sender: nil)
-        
     }
+    
+    @IBAction func createGroupTapped(_ sender: Any) {
+        // adding group name
+        if let name = groupNameTF.text {
+            newGroup.name = name
+          // adding particpants
+          //  if let players =
+        }
+    }
+    
+    /*
+     var participants : [User] = []
+        var scoreboard : [Int] = []
+        var dateCreated = 0
+        var name = ""
+        var history : [Ride] = []
+     */
+    
     
     /*
     // MARK: - Navigation
