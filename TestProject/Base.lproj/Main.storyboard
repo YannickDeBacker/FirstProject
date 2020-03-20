@@ -15,18 +15,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eyl-cp-VYp">
-                                <rect key="frame" x="10" y="210" width="394" height="38"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="y.deback@hotmail.com" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eyl-cp-VYp">
+                                <rect key="frame" x="10" y="210" width="394" height="39.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mGo-Qf-z0j">
-                                <rect key="frame" x="10" y="258" width="394" height="38"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="abc123" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mGo-Qf-z0j">
+                                <rect key="frame" x="10" y="259.5" width="394" height="39.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSf-XP-twq">
-                                <rect key="frame" x="10" y="346" width="394" height="42"/>
+                                <rect key="frame" x="10" y="349" width="394" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKO-qP-uD2">
-                                <rect key="frame" x="10" y="398" width="394" height="42"/>
+                                <rect key="frame" x="10" y="401" width="394" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Sign-up"/>
                                 <connections>
@@ -81,10 +81,26 @@
             </objects>
             <point key="canvasLocation" x="-861" y="114"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="azJ-9b-1pk">
+            <objects>
+                <viewController id="kcd-4H-U1V" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bgv-b2-gvl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="2Q9-6C-8WP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7ll-w6-diy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qiA-kh-lPb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1616" y="-613"/>
+        </scene>
         <!--Groups-->
         <scene sceneID="CGL-Cf-k58">
             <objects>
-                <tableViewController id="3Hg-UF-fBQ" sceneMemberID="viewController">
+                <tableViewController id="3Hg-UF-fBQ" customClass="GroupsTableViewController" customModule="Find_Bob_0_1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NzU-2c-Nbf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,29 +120,25 @@
                             <outlet property="delegate" destination="3Hg-UF-fBQ" id="cu2-wd-aIN"/>
                         </connections>
                     </tableView>
-                    <toolbarItems>
-                        <barButtonItem title="Log Out" style="plain" id="WjX-PJ-TFA">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CVI-9f-KSa">
-                                <rect key="frame" x="20" y="12" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log Out"/>
-                            </button>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Groups" id="yYG-Kg-CiI">
+                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="YcB-UA-8bW">
                             <connections>
-                                <action selector="logoutButton:" destination="e27-FV-co7" id="NR0-9B-ASS"/>
+                                <action selector="logoutTapped:" destination="3Hg-UF-fBQ" id="04U-Ny-r3h"/>
                             </connections>
                         </barButtonItem>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" title="Groups" id="yYG-Kg-CiI">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="X4I-jd-5qE">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="X4I-jd-5qE">
                             <connections>
-                                <action selector="addGroupButton:" destination="e27-FV-co7" id="LIu-H5-2FS"/>
+                                <action selector="addGroupTapped:" destination="3Hg-UF-fBQ" id="rHQ-69-PSx"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="kcd-4H-U1V" kind="show" identifier="groupsToAddGroup" id="lH1-vV-OBg"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43L-Og-AdI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="e27-FV-co7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="861" y="114"/>
         </scene>

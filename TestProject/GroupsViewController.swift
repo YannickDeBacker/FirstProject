@@ -11,10 +11,15 @@ import UIKit
 class GroupsViewController: UIViewController {
 
     @IBAction func addGroupButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "groupsToAddGroup", sender: nil)
+        
     }
     
     @IBAction func logoutButton(_ sender: Any) {
+        // possibility to add 'sure you want to log out alert'
+        self.dismiss(animated: true, completion: nil)
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
